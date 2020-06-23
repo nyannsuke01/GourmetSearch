@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13BEEECC166BED2A09C536E8 /* Pods_GourmetSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 236E0EA140C9361581850E64 /* Pods_GourmetSearch.framework */; };
+		6516C8D25A4C63378EE8276C /* Pods_GourmetSearch_GourmetSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F211BF4486F4826BDEE4866F /* Pods_GourmetSearch_GourmetSearchUITests.framework */; };
+		A9CEAB5443F0722D3DB50315 /* Pods_GourmetSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F023AA3AD26DC3F973F4F86 /* Pods_GourmetSearchTests.framework */; };
+		CE020255249CB5D9003E8770 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE020254249CB5D9003E8770 /* AppDelegate.swift */; };
+		CE020257249CB5D9003E8770 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE020256249CB5D9003E8770 /* SceneDelegate.swift */; };
+		CE020259249CB5D9003E8770 /* ShopListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE020258249CB5D9003E8770 /* ShopListTableViewCell.swift */; };
+		CE02025C249CB5D9003E8770 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE02025A249CB5D9003E8770 /* Main.storyboard */; };
+		CE02025E249CB5DB003E8770 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE02025D249CB5DB003E8770 /* Assets.xcassets */; };
+		CE020261249CB5DB003E8770 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE02025F249CB5DB003E8770 /* LaunchScreen.storyboard */; };
+		CE02026C249CB5DB003E8770 /* GourmetSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02026B249CB5DB003E8770 /* GourmetSearchTests.swift */; };
+		CE020277249CB5DB003E8770 /* GourmetSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE020276249CB5DB003E8770 /* GourmetSearchUITests.swift */; };
+		CE020285249CB69F003E8770 /* ShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE020284249CB69F003E8770 /* ShopListViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE020268249CB5DB003E8770 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE020249249CB5D9003E8770 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE020250249CB5D9003E8770;
+			remoteInfo = GourmetSearch;
+		};
+		CE020273249CB5DB003E8770 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE020249249CB5D9003E8770 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE020250249CB5D9003E8770;
+			remoteInfo = GourmetSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		236E0EA140C9361581850E64 /* Pods_GourmetSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GourmetSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F023AA3AD26DC3F973F4F86 /* Pods_GourmetSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GourmetSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		558643CAE8F087AF3FCD1FDA /* Pods-GourmetSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GourmetSearchTests.release.xcconfig"; path = "Target Support Files/Pods-GourmetSearchTests/Pods-GourmetSearchTests.release.xcconfig"; sourceTree = "<group>"; };
+		728D12C229D0E846361704F6 /* Pods-GourmetSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GourmetSearch.debug.xcconfig"; path = "Target Support Files/Pods-GourmetSearch/Pods-GourmetSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		844B64AF775C26BFE4B7F5FA /* Pods-GourmetSearch-GourmetSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GourmetSearch-GourmetSearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-GourmetSearch-GourmetSearchUITests/Pods-GourmetSearch-GourmetSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		903E919E6204BE659379BCCE /* Pods-GourmetSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GourmetSearch.release.xcconfig"; path = "Target Support Files/Pods-GourmetSearch/Pods-GourmetSearch.release.xcconfig"; sourceTree = "<group>"; };
+		B3CE74743507D7A451E10479 /* Pods-GourmetSearch-GourmetSearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GourmetSearch-GourmetSearchUITests.release.xcconfig"; path = "Target Support Files/Pods-GourmetSearch-GourmetSearchUITests/Pods-GourmetSearch-GourmetSearchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C36C6400AA127233EC448D33 /* Pods-GourmetSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GourmetSearchTests.debug.xcconfig"; path = "Target Support Files/Pods-GourmetSearchTests/Pods-GourmetSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE020251249CB5D9003E8770 /* GourmetSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GourmetSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE020254249CB5D9003E8770 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE020256249CB5D9003E8770 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE020258249CB5D9003E8770 /* ShopListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListTableViewCell.swift; sourceTree = "<group>"; };
+		CE02025B249CB5D9003E8770 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE02025D249CB5DB003E8770 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE020260249CB5DB003E8770 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE020262249CB5DB003E8770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE020267249CB5DB003E8770 /* GourmetSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GourmetSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE02026B249CB5DB003E8770 /* GourmetSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourmetSearchTests.swift; sourceTree = "<group>"; };
+		CE02026D249CB5DB003E8770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE020272249CB5DB003E8770 /* GourmetSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GourmetSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE020276249CB5DB003E8770 /* GourmetSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourmetSearchUITests.swift; sourceTree = "<group>"; };
+		CE020278249CB5DB003E8770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE020284249CB69F003E8770 /* ShopListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListViewController.swift; sourceTree = "<group>"; };
+		F211BF4486F4826BDEE4866F /* Pods_GourmetSearch_GourmetSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GourmetSearch_GourmetSearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE02024E249CB5D9003E8770 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13BEEECC166BED2A09C536E8 /* Pods_GourmetSearch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE020264249CB5DB003E8770 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CEAB5443F0722D3DB50315 /* Pods_GourmetSearchTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE02026F249CB5DB003E8770 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6516C8D25A4C63378EE8276C /* Pods_GourmetSearch_GourmetSearchUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		557F73A35F6D437F31D42D60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				236E0EA140C9361581850E64 /* Pods_GourmetSearch.framework */,
+				F211BF4486F4826BDEE4866F /* Pods_GourmetSearch_GourmetSearchUITests.framework */,
+				4F023AA3AD26DC3F973F4F86 /* Pods_GourmetSearchTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE020248249CB5D9003E8770 = {
+			isa = PBXGroup;
+			children = (
+				CE020253249CB5D9003E8770 /* GourmetSearch */,
+				CE02026A249CB5DB003E8770 /* GourmetSearchTests */,
+				CE020275249CB5DB003E8770 /* GourmetSearchUITests */,
+				CE020252249CB5D9003E8770 /* Products */,
+				E63B1B40967EB683C1ADF4D9 /* Pods */,
+				557F73A35F6D437F31D42D60 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE020252249CB5D9003E8770 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE020251249CB5D9003E8770 /* GourmetSearch.app */,
+				CE020267249CB5DB003E8770 /* GourmetSearchTests.xctest */,
+				CE020272249CB5DB003E8770 /* GourmetSearchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE020253249CB5D9003E8770 /* GourmetSearch */ = {
+			isa = PBXGroup;
+			children = (
+				CE0BAC52249CB9380055CB1E /* ShopList */,
+				CE020254249CB5D9003E8770 /* AppDelegate.swift */,
+				CE020256249CB5D9003E8770 /* SceneDelegate.swift */,
+				CE02025A249CB5D9003E8770 /* Main.storyboard */,
+				CE02025D249CB5DB003E8770 /* Assets.xcassets */,
+				CE02025F249CB5DB003E8770 /* LaunchScreen.storyboard */,
+				CE020262249CB5DB003E8770 /* Info.plist */,
+			);
+			path = GourmetSearch;
+			sourceTree = "<group>";
+		};
+		CE02026A249CB5DB003E8770 /* GourmetSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE02026B249CB5DB003E8770 /* GourmetSearchTests.swift */,
+				CE02026D249CB5DB003E8770 /* Info.plist */,
+			);
+			path = GourmetSearchTests;
+			sourceTree = "<group>";
+		};
+		CE020275249CB5DB003E8770 /* GourmetSearchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE020276249CB5DB003E8770 /* GourmetSearchUITests.swift */,
+				CE020278249CB5DB003E8770 /* Info.plist */,
+			);
+			path = GourmetSearchUITests;
+			sourceTree = "<group>";
+		};
+		CE0BAC52249CB9380055CB1E /* ShopList */ = {
+			isa = PBXGroup;
+			children = (
+				CE020258249CB5D9003E8770 /* ShopListTableViewCell.swift */,
+				CE020284249CB69F003E8770 /* ShopListViewController.swift */,
+			);
+			path = ShopList;
+			sourceTree = "<group>";
+		};
+		E63B1B40967EB683C1ADF4D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				728D12C229D0E846361704F6 /* Pods-GourmetSearch.debug.xcconfig */,
+				903E919E6204BE659379BCCE /* Pods-GourmetSearch.release.xcconfig */,
+				844B64AF775C26BFE4B7F5FA /* Pods-GourmetSearch-GourmetSearchUITests.debug.xcconfig */,
+				B3CE74743507D7A451E10479 /* Pods-GourmetSearch-GourmetSearchUITests.release.xcconfig */,
+				C36C6400AA127233EC448D33 /* Pods-GourmetSearchTests.debug.xcconfig */,
+				558643CAE8F087AF3FCD1FDA /* Pods-GourmetSearchTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE020250249CB5D9003E8770 /* GourmetSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE02027B249CB5DB003E8770 /* Build configuration list for PBXNativeTarget "GourmetSearch" */;
+			buildPhases = (
+				BAAB018D7DE110D587980652 /* [CP] Check Pods Manifest.lock */,
+				CE02024D249CB5D9003E8770 /* Sources */,
+				CE02024E249CB5D9003E8770 /* Frameworks */,
+				CE02024F249CB5D9003E8770 /* Resources */,
+				58D94C70DC986AB592CA79CD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GourmetSearch;
+			productName = GourmetSearch;
+			productReference = CE020251249CB5D9003E8770 /* GourmetSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE020266249CB5DB003E8770 /* GourmetSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE02027E249CB5DB003E8770 /* Build configuration list for PBXNativeTarget "GourmetSearchTests" */;
+			buildPhases = (
+				A5F82B5B71450C9F36705D4D /* [CP] Check Pods Manifest.lock */,
+				CE020263249CB5DB003E8770 /* Sources */,
+				CE020264249CB5DB003E8770 /* Frameworks */,
+				CE020265249CB5DB003E8770 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE020269249CB5DB003E8770 /* PBXTargetDependency */,
+			);
+			name = GourmetSearchTests;
+			productName = GourmetSearchTests;
+			productReference = CE020267249CB5DB003E8770 /* GourmetSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE020271249CB5DB003E8770 /* GourmetSearchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE020281249CB5DB003E8770 /* Build configuration list for PBXNativeTarget "GourmetSearchUITests" */;
+			buildPhases = (
+				623084CC7AB9927AC37D8D88 /* [CP] Check Pods Manifest.lock */,
+				CE02026E249CB5DB003E8770 /* Sources */,
+				CE02026F249CB5DB003E8770 /* Frameworks */,
+				CE020270249CB5DB003E8770 /* Resources */,
+				E879A2F1A2B1FB6C4153A6E6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE020274249CB5DB003E8770 /* PBXTargetDependency */,
+			);
+			name = GourmetSearchUITests;
+			productName = GourmetSearchUITests;
+			productReference = CE020272249CB5DB003E8770 /* GourmetSearchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE020249249CB5D9003E8770 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = user;
+				TargetAttributes = {
+					CE020250249CB5D9003E8770 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					CE020266249CB5DB003E8770 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = CE020250249CB5D9003E8770;
+					};
+					CE020271249CB5DB003E8770 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = CE020250249CB5D9003E8770;
+					};
+				};
+			};
+			buildConfigurationList = CE02024C249CB5D9003E8770 /* Build configuration list for PBXProject "GourmetSearch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE020248249CB5D9003E8770;
+			productRefGroup = CE020252249CB5D9003E8770 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE020250249CB5D9003E8770 /* GourmetSearch */,
+				CE020266249CB5DB003E8770 /* GourmetSearchTests */,
+				CE020271249CB5DB003E8770 /* GourmetSearchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE02024F249CB5D9003E8770 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE020261249CB5DB003E8770 /* LaunchScreen.storyboard in Resources */,
+				CE02025E249CB5DB003E8770 /* Assets.xcassets in Resources */,
+				CE02025C249CB5D9003E8770 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE020265249CB5DB003E8770 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE020270249CB5DB003E8770 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		58D94C70DC986AB592CA79CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GourmetSearch/Pods-GourmetSearch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GourmetSearch/Pods-GourmetSearch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GourmetSearch/Pods-GourmetSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		623084CC7AB9927AC37D8D88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GourmetSearch-GourmetSearchUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5F82B5B71450C9F36705D4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GourmetSearchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAAB018D7DE110D587980652 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GourmetSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E879A2F1A2B1FB6C4153A6E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GourmetSearch-GourmetSearchUITests/Pods-GourmetSearch-GourmetSearchUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GourmetSearch-GourmetSearchUITests/Pods-GourmetSearch-GourmetSearchUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GourmetSearch-GourmetSearchUITests/Pods-GourmetSearch-GourmetSearchUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE02024D249CB5D9003E8770 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE020285249CB69F003E8770 /* ShopListViewController.swift in Sources */,
+				CE020259249CB5D9003E8770 /* ShopListTableViewCell.swift in Sources */,
+				CE020255249CB5D9003E8770 /* AppDelegate.swift in Sources */,
+				CE020257249CB5D9003E8770 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE020263249CB5DB003E8770 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE02026C249CB5DB003E8770 /* GourmetSearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE02026E249CB5DB003E8770 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE020277249CB5DB003E8770 /* GourmetSearchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE020269249CB5DB003E8770 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE020250249CB5D9003E8770 /* GourmetSearch */;
+			targetProxy = CE020268249CB5DB003E8770 /* PBXContainerItemProxy */;
+		};
+		CE020274249CB5DB003E8770 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE020250249CB5D9003E8770 /* GourmetSearch */;
+			targetProxy = CE020273249CB5DB003E8770 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE02025A249CB5D9003E8770 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE02025B249CB5D9003E8770 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE02025F249CB5DB003E8770 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE020260249CB5DB003E8770 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE020279249CB5DB003E8770 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE02027A249CB5DB003E8770 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE02027C249CB5DB003E8770 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 728D12C229D0E846361704F6 /* Pods-GourmetSearch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KB84KZYV6;
+				INFOPLIST_FILE = GourmetSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "user-team.GourmetSearch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE02027D249CB5DB003E8770 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 903E919E6204BE659379BCCE /* Pods-GourmetSearch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KB84KZYV6;
+				INFOPLIST_FILE = GourmetSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "user-team.GourmetSearch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE02027F249CB5DB003E8770 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C36C6400AA127233EC448D33 /* Pods-GourmetSearchTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KB84KZYV6;
+				INFOPLIST_FILE = GourmetSearchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "user-team.GourmetSearchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GourmetSearch.app/GourmetSearch";
+			};
+			name = Debug;
+		};
+		CE020280249CB5DB003E8770 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 558643CAE8F087AF3FCD1FDA /* Pods-GourmetSearchTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KB84KZYV6;
+				INFOPLIST_FILE = GourmetSearchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "user-team.GourmetSearchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GourmetSearch.app/GourmetSearch";
+			};
+			name = Release;
+		};
+		CE020282249CB5DB003E8770 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 844B64AF775C26BFE4B7F5FA /* Pods-GourmetSearch-GourmetSearchUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KB84KZYV6;
+				INFOPLIST_FILE = GourmetSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "user-team.GourmetSearchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GourmetSearch;
+			};
+			name = Debug;
+		};
+		CE020283249CB5DB003E8770 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3CE74743507D7A451E10479 /* Pods-GourmetSearch-GourmetSearchUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KB84KZYV6;
+				INFOPLIST_FILE = GourmetSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "user-team.GourmetSearchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GourmetSearch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE02024C249CB5D9003E8770 /* Build configuration list for PBXProject "GourmetSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE020279249CB5DB003E8770 /* Debug */,
+				CE02027A249CB5DB003E8770 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE02027B249CB5DB003E8770 /* Build configuration list for PBXNativeTarget "GourmetSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE02027C249CB5DB003E8770 /* Debug */,
+				CE02027D249CB5DB003E8770 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE02027E249CB5DB003E8770 /* Build configuration list for PBXNativeTarget "GourmetSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE02027F249CB5DB003E8770 /* Debug */,
+				CE020280249CB5DB003E8770 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE020281249CB5DB003E8770 /* Build configuration list for PBXNativeTarget "GourmetSearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE020282249CB5DB003E8770 /* Debug */,
+				CE020283249CB5DB003E8770 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE020249249CB5D9003E8770 /* Project object */;
+}
